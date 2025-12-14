@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quiz Oka • Öwren & Barla</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body class="light-theme">
+  <div class="theme-toggle">
+    <button id="toggleTheme">🌙</button>
+  </div>
+
+  <div class="wrapper">
+    <div class="start-screen">
+      <h1>Hoş geldiňiz!</h1>
+      <p>Kategoriýaňyzy saýlaň!</p>
+      <select id="category">
+        <option value="">-- Kategoriýa --</option>
+        <option value="syntax">Sintaktika</option>
+        <option value="morphology">Morfologiýa</option>
+        <option value="phonetics">Fonetika</option>
+        <option value="hyzmaty">Diliň möhüm hyzmaty</option>
+        <option value="gadymylygy">Türkmen diliniň gadymylygy</option>
+        <option value="ses_we_harp">Ses we harp</option>
+        <option value="bogun">Bogun</option>
+        <option value="basym">Basym</option>
+        <option value="düşmek_düzgüni">Dar çekimlileriň düşmek düzgüni</option>
+        <option value="orfoepiýa">Orfoepiýa</option>
+        <option value="orfografiýa">orfografika</option>
+        <option value="ýörelge">Türkmen diliniň kadalaryndaky esasy ýörelgeler</option>
+        <option value="leksika">Leksika</option>
+        <option value="sintaksis">Sintaksis</option>
+        <option value="sözlem">Sözlem</option>
+        <option value="baş_agzalar">Sözlemiň baş agzalary</option>
+        <option value="aýyklaýjy_agzalar">Sözlemiň aýyklaýjy agzalary</option>
+        
+      </select>
+      <button id="startBtn" class="btn">Testi başlat</button>
+    </div>
+
+    <div id="quizSection" class="hidden">
+      <div class="progress">
+  Sorag <span id="currentNum">1</span> / <span id="totalNum">20</span>
+  • XP: <span id="xp">0</span>
+</div>
+
+<div class="progress-bar">
+  <div class="progress-fill" id="progressFill"></div>
+</div>
+
+      <div class="progress-bar">
+  <div class="progress-fill" id="progressFill"></div>
+</div>
+
+      <div class="card question-card">
+        <div id="questionBox" class="question-text">Sorag şu ýerde</div>
+        <div id="optionsBox" class="options-list"></div>
+      </div>
+      <button id="nextBtn" class="btn next-btn" disabled>Indiki</button>
+    </div>
+
+    <div id="resultSection" class="hidden">
+      <h2>Siziň netijäňiz</h2>
+      <p id="resultText"></p>
+      <button id="retryBtn" class="btn">Täzeden synanşyň</button>
+    </div>
+  </div>
+  <div class="progress">
+  Sorag <span id="currentNum">1</span> / <span id="totalNum">20</span>
+  • XP: <span id="xp">0</span>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
